@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class prac2_6{
+
+    public static void main(String[] args){
+
+        Scanner scn= new Scanner(System.in);
+        System.out.println("Enter a String: ");
+        String str= scn.nextLine();
+
+        System.out.println("The length of string is: "+ str.length()); //length of String
+        System.out.println(str.toLowerCase()); //String in lowercase
+        System.out.println(str.toUpperCase()); //String in uppercase
+        StringBuilder s = new StringBuilder();
+        s.append(str);
+        System.out.println(s.reverse()); //String reversed
+
+        char []a=str.toCharArray();
+        Arrays.sort(a);
+        System.out.println("The Sorted string is: "+Arrays.toString(a)); //Sorted String
+
+        System.out.println("This practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
