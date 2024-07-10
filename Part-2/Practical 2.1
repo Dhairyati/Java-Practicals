@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class prac2_1{
+    public static void main(String[] args){
+
+     Scanner scn=new Scanner(System.in);
+     System.out.print("Enter the string: ");
+     String str=scn.nextLine();
+
+     System.out.println("Enter the number of times you want to repeat: ");
+     int n=scn.nextInt();
+
+     int l=str.length();
+
+        String d="";
+            if(l>=3){  //Condition for Strings less than length 3
+               d=str.substring(0,3);
+               }
+               else{
+                   d=str.substring(0,l);
+                  }
+            for(int i=0;i<n;i++){
+                System.out.print(d);
+               }
+      System.out.println("\nThis practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
