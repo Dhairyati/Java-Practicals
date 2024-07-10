@@ -1,0 +1,61 @@
+import java.util.*;
+
+public class prac1_5 {
+    public static void main(String[] args) {
+
+        String pro[]={"Motor","Fan","Tube","Wires","Others"};
+        int code[]={1,2,3,4,5};
+        int price[]={100,200,300,400,500};
+        float tax,sp;
+
+        Scanner scn = new Scanner(System.in);
+//Printing Product List
+        System.out.println("Product List: ");
+        for(int i=0;i<5;i++)
+        {
+            System.out.println(code[i]+". "+pro[i]);
+        }
+
+        System.out.println("Enter the Product Code: ");
+         int c= scn.nextInt();
+
+        switch(c)
+        {
+            case 1:
+            tax=(price[0]*8)/100;
+            sp=(price[0]+tax);
+            System.out.println("The total amount of motor is "+sp);
+            break;
+            
+            case 2:
+            tax=(price[1]*12)/100;
+            sp=(price[1]+tax);
+            System.out.println("The total amount of fan is "+sp);
+            break;
+
+            case 3:
+            tax=(price[2]*5)/100;
+            sp=(price[2]+tax);
+            System.out.println("The total amount of tube is "+sp);
+            break;
+
+            case 4:
+            tax=(price[3]*7.5f)/100;
+            sp=(price[3]+tax);
+            System.out.println("The total amount of wire is "+sp);
+            break;
+
+            case 5:
+            tax=(price[4]*3)/100;
+            sp=(price[4]+tax);
+            System.out.println("The total amount of others is "+sp);
+            break;
+
+            default:
+            System.out.println("Invalid Product Code");
+
+        }
+           System.out.println("This practical is made by 23CS052-Dhairyati Pandya");
+
+    }
+}
