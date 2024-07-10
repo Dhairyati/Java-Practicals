@@ -1,0 +1,23 @@
+import java.util.*;
+public class prac2_5{
+    public static void main(String[] args){
+
+     Scanner scn=new Scanner(System.in);
+     System.out.print("Enter the string: ");
+     String str=scn.nextLine();
+
+     String[] p = str.split(" ");
+
+        for(int i=0;i<p.length;i++){
+
+          String d="";
+
+           for(int j=p[i].length()-1;j>=0; j--){
+
+                 d=d+p[i].charAt(j);
+                 }
+          System.out.print(d+" ");
+        }
+      System.out.println("\nThis practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
