@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class prac3_3{
+    public static void main(String[] args){
+        Employee E1= new Employee();
+        E1.setdata();
+        E1.getdata();
+        Employee E2= new Employee();
+        E2.setdata();
+        E2.getdata();
+        System.out.println("This practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
+
+class Employee{
+    String fn="";
+    String ln="";
+    double ms;
+    Scanner scn= new Scanner(System.in);
+    public void setdata(){
+        System.out.println("Enter First name: ");
+        fn= scn.nextLine();
+        System.out.println("Enter Last name: ");
+        ln= scn.nextLine();
+        System.out.println("Enter Monthly Salary: ");
+        ms= scn.nextDouble();
+        if(ms<0.0){
+            ms=0.0;
+        }
+    }
+    public void getdata(){
+        System.out.println("First name: "+fn);
+        System.out.println("Last name: "+ln);
+        System.out.println("Monthly Salary: "+ms);
+    }
+}
