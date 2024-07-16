@@ -1,0 +1,30 @@
+import java.util.*;
+public class prac3_4{
+    public static void main(String[] args){
+        Date d1= new Date();
+        d1.setdata();
+        d1.displaydate();
+        System.out.println("This practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
+
+class Date{
+    int month,day,year;
+    Date(){
+        month=0;
+        day=0;
+        year=0;
+    }
+    public void setdata(){
+        Scanner scn= new Scanner(System.in);
+        System.out.println("Enter date: ");
+        day=scn.nextInt();
+        System.out.println("Enter month: ");
+        month=scn.nextInt();
+        System.out.println("Enter year: ");
+        year=scn.nextInt();
+    }
+    public void displaydate(){
+        System.out.println(day+"/"+month+"/"+year);
+    }
+}
