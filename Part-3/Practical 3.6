@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class prac3_6{
+    public static void main(String[] args){
+        Complex c1= new Complex();
+        c1.sum();
+        c1.diff();
+        c1.pro();
+        System.out.println("This practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
+
+class Complex{
+    int r1,r2,i1,i2,rd,id,p1,p2;
+
+    Complex(){
+        Scanner scn= new Scanner(System.in);
+        System.out.println("Enter Real part of 1st Number: ");
+        r1= scn.nextInt();
+        System.out.println("Enter Imaginary part of 1st Number: ");
+        i1= scn.nextInt();
+        System.out.println("Enter Real part of 2nd Number: ");
+        r2= scn.nextInt();
+        System.out.println("Enter Imaginary part of 2nd Number: ");
+        i2= scn.nextInt();
+    }
+    public void sum(){
+        System.out.println("Sum= ("+(r1+r2)+")+("+(i1+i2)+")i");
+    }
+    public void diff(){
+        rd=r1-r2;
+        id=i1-i2;
+        System.out.println("Difference= ("+rd+")+("+id+")i");
+    }
+    public void pro(){
+        p1=(r1*i1)-(r2*i2);
+        p2=(r1*i2)+(r2*i1);
+        System.out.println("Product= ("+(p1)+")+("+(p2)+")i");
+    }
+}
