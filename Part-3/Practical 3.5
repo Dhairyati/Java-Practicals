@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class prac3_5{
+    public static void main(String[] args){
+        double l,b;
+        Scanner scn= new Scanner(System.in);
+        System.out.println("Enter the length of rectangle: ");
+        l= scn.nextDouble();
+        System.out.println("Enter the breadth of rectangle: ");
+        b= scn.nextDouble();
+        Area a1= new Area(l,b);
+        a1.returnArea();
+        System.out.println("This practical is made by 23CS052-Dhairyati Pandya");
+    }
+}
+
+class Area{
+    double length,breadth,area;
+
+    Area(double l, double b){
+        length=l;
+        breadth=b;
+    }
+    public void returnArea(){
+        area=length*breadth;
+        System.out.println("The area of rectangle is: "+area);
+    }
+}
